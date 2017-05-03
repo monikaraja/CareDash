@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<!--This document contains all of the HTML for the page. -->
+
+<html>
+<head>
+	<title>CareDash</title>
+	<link rel="icon" href="https://pbs.twimg.com/profile_images/655038467483766784/nX1wA-bk.jpg">
+	<link rel="stylesheet" href="style.css" type="text/css">
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+</head>
+<body onresize="adjustPage()">
+	<div id="nav-bar">
+		<div class="img-container">
+			<img id="logo" src="https://d2p6rm2rz85klc.cloudfront.net/caredash/site/caredash-logo-heart.png" alt="CareDash">
+		</div>
+		<div id="nav-menu">
+			<ul id="nav-items">
+				<li class="nav-item" onmouseover="showMenu('menu1')" onmouseleave="hideMenu('menu1')">
+					Menu Item
+					<div class="drop-menu" id="menu1">
+						<ul class="drop-items">
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item" onmouseover="showMenu('menu2')" onmouseleave="hideMenu('menu2')">
+					Menu Item
+					<div class="drop-menu" id="menu2">
+						<ul class="drop-items">
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item" onmouseover="showMenu('menu3')" onmouseleave="hideMenu('menu3')">
+					Menu Item
+					<div class="drop-menu" id="menu3">
+						<ul class="drop-items">
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+							<li class="drop-item">
+								<a href="#">
+									Dropdown Menu Item
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<div class="img-container" id="main-img-container">
+			<img id="main-img" src="http://cdn.realcoolvideos.com/wp-content/uploads/2016/12/headaches-doctor.jpg" alt="Doctor's office">
+		</div>
+		<div id="sign-up">
+			<h2 id="sign-up-text">Sign Up with CareDash to Edit your Provider Profile</h2>
+			<div id="sign-up-problem">
+				<p id="unfilled">All fields must be filled</p>
+				<p id="no-match">Passwords don't match</p>
+			</div>
+			<div id="form">
+				<form id="sign-up-form" onsubmit="validateForm(); return false;">
+					<label>First Name</label><input type="text" id="firstname"><br>
+					<label>Last Name</label><input type="text" id="lastname"><br>
+					<label>Email Address</label><input type="text" id="email"><br>
+					<label>Password</label><input type="password" id="password"><br>
+					<label>Confirm Password</label><input type="password" id="confirm"><br>
+					<input type="submit" name="submit" id="submit" class="submit"><br>
+					<input type="submit" name="login" value="Log In" class="submit">
+				</form>
+			</div>
+		</div>
+	<div id="main-bottom">
+		<h2 id="reasons">Reasons to Sign Up as a Provider on CareDash</h2>
+		<div class="art thirds">
+			<a class="no-grey" href="#">
+				<div class="img-container art-img-container">
+					<img src="https://hilliardstudiomethod.com/wp-content/uploads/2017/01/Apple.jpg" alt="Apple">
+				</div>
+				<h2 class="headline">Headline</h2>
+			</a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non tempus lorem, sit amet vehicula magna. Ut sit amet metus sapien. Donec eu blandit ex. Cras suscipit erat fermentum, porttitor est et, viverra lectus. Fusce maximus mauris augue, quis vulputate dolor dapibus quis. Etiam faucibus, enim vitae sodales commodo, eros ex pellentesque erat, eu tincidunt elit nibh ac massa. Nullam dictum ante in est placerat elementum.</p>		
+			<div class="more-container">
+				<a class="no-grey" href="#">
+					<p>
+						Learn More
+					</p>
+				</a>
+			</div>
+		</div>
+		<div class="art thirds">
+			<a class="no-grey" href="#">
+				<div class="img-container art-img-container">
+					<img src="http://copicola.com/images/orange-images/orange-images-27.jpg" alt="Orange">
+				</div>
+				<h2 class="headline">Headline</h2>
+			</a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non tempus lorem, sit amet vehicula magna. Ut sit amet metus sapien. Donec eu blandit ex. Cras suscipit erat fermentum, porttitor est et, viverra lectus. Fusce maximus mauris augue, quis vulputate dolor dapibus quis. Etiam faucibus, enim vitae sodales commodo, eros ex pellentesque erat, eu tincidunt elit nibh ac massa. Nullam dictum ante in est placerat elementum.</p>
+			<div class="more-container">
+				<a class="no-grey" href="#">
+					<p>
+						Learn More
+					</p>
+				</a>
+			</div>
+		</div>
+		<div class="art thirds">
+			<a class="no-grey" href="#">
+				<div class="img-container art-img-container">
+					<img src="https://www.organicfacts.net/wp-content/uploads/2013/05/Banana3.jpg" alt="Banana">
+				</div>
+				<h2 class="headline">Headline</h2>
+			</a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non tempus lorem, sit amet vehicula magna. Ut sit amet metus sapien. Donec eu blandit ex. Cras suscipit erat fermentum, porttitor est et, viverra lectus. Fusce maximus mauris augue, quis vulputate dolor dapibus quis. Etiam faucibus, enim vitae sodales commodo, eros ex pellentesque erat, eu tincidunt elit nibh ac massa. Nullam dictum ante in est placerat elementum.</p>
+			<div class="more-container">
+				<a class="no-grey" href="#">
+					<p>
+						Learn More
+					</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<ul class="footer-list thirds">
+			<p>CareDash</p>
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>About</li></a>
+			<a href="#"><li>Contact</li></a>
+			<a href="#"><li>Write a Review</li></a>
+		</ul>
+		<ul class="footer-list thirds">
+			<p>Specialists</p>
+			<a href="#"><li>Primary Care Physicians</li></a>
+			<a href="#"><li>Pediatricians</li></a>
+			<a href="#"><li>Optometrists</li></a>
+			<a href="#"><li>Dentists</li></a>
+		</ul>
+		<ul class="footer-list thirds" id="follow">
+			<p>Follow Us</p>
+			<div id="logo-container">
+				<a href="#">
+					<li>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4XQ1rIaGXnNh-XQ3xd9CvNvvIVY40R9bphsVUAIJLO8zz2Aw" alt="Facebook">
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-256.png" alt="Twitter">
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<img src="https://image.freepik.com/free-icon/social-instagram-circle_318-25388.jpg" alt="Instagram">
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<img src="http://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Pinterest-icon.png" alt="Pinterest">
+					</li>
+				</a>
+			</div>
+		</ul>
+	</div>
+</html>
